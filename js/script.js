@@ -6,13 +6,14 @@ $('.parallax-window').parallax({
 
 var width = document.getElementById('title-name').offsetWidth;
 
-var cssProperties = anime({
-  targets: '#cssProperties .line',
-  width: width,
-  height: '5px',
-  duration: 4000,
-  delay: 300,
-});
+addEventListener("load", function(){
+	var cssProperties = anime({
+  	targets: '#cssProperties .line',
+  	width: width,
+  	height: '5px',
+  	duration: 4000,
+ 	delay: 300
+});})
 
 jQuery(document).ready(function($) {
 
