@@ -10,6 +10,7 @@ body {
 	text-align: center;
 }
 #title-name{
+	display: inline-block;
 	font-size: 72px;
 	font-weight: 400;
 }
@@ -17,6 +18,22 @@ body {
 	font-size: 22px;
 	font-weight: 350;
 	letter-spacing: 2px;
+	padding-top: 20px;
+}
+#test {
+	width: 300px;
+	height: 300px;
+}
+
+.line {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 1px;
+	height: 1px;
+	background: #000000;
 }
 
 .vertical-center {
