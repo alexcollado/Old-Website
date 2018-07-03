@@ -8,6 +8,8 @@ body {
 .title{
 	margin: 0 auto;
 	text-align: center;
+	position: relative;
+	top: -7vh;
 }
 #title-name{
 	display: inline-block;
