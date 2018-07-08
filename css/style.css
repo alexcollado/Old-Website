@@ -67,6 +67,14 @@ body {
 		background-size: cover;
 		background-position: center;
 	}
+	.mobile-menu-button {
+		position: absolute;
+		left: 3%;
+		top: 2%;
+	}
+	.mobile-menu-button-link {
+		color: #000000;
+	}
 }
 
 /*Tablet/Laptop/Desktop CSS*/
@@ -79,6 +87,9 @@ body {
 		width:100%;
 		height:auto;
 		object-fit: contain
+	}
+	.mobile-menu-button {
+		display: none;
 	}
 }
 
