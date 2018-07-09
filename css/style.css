@@ -22,10 +22,6 @@ body {
 	letter-spacing: 2px;
 	padding-top: 20px;
 }
-#test {
-	width: 300px;
-	height: 300px;
-}
 
 .line {
 	position: absolute;
@@ -43,6 +39,20 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+#mobile-menu {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+	min-width: 100%;
+}
+.mobile-link {
+	min-height: 100%;
+	min-height: 33.333333vh;
+	display: flex;
+	align-items: center;
 }
 
 /*Mobile CSS*/
@@ -68,13 +78,15 @@ body {
 		background-position: center;
 	}
 	.mobile-menu-button {
-		position: absolute;
+		z-index: 1000;
+		position: fixed;
 		left: 3%;
 		top: 2%;
 	}
 	.mobile-menu-button-link {
 		color: #000000;
 	}
+
 }
 
 /*Tablet/Laptop/Desktop CSS*/

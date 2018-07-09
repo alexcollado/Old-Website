@@ -15,6 +15,8 @@ addEventListener("load", function(){
  	delay: 300
 });})
 
+$(".fa-times").hide();
+
 jQuery(document).ready(function($) {
 
     // Store the window width
@@ -36,5 +38,16 @@ jQuery(document).ready(function($) {
         // Otherwise do nothing
 
     });
+
+    $('.fa-bars').click(function(event) {
+    	$('#mobile-menu').slideToggle();
+    	$(".fa-bars").hide(400);
+    	$(".fa-times").show(400);
+    })
+    $('.fa-times').click(function(event) {
+    	$('#mobile-menu').slideToggle();
+    	$(".fa-times").hide(400);
+    	$(".fa-bars").show(400);
+    })
 
 });
