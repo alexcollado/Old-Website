@@ -5,87 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="shortcut icon" href="images/wave.ico" />
 	<title>Alex Collado</title>
 </head>
 <body>
-	<div id="mobile-menu" class="container">
-		<div class="row mobile-link">
-			<div class="col align-self-center">
-				<h3>Home</h3>
-			</div>
-		</div>
+	<div id="mobile-menu-container" class="container">
+		<div class="mobile-menu">
 
-		<div class="row mobile-link">
-			<div class="col align-self-center">
-				<h3>About</h3>
+			<div class="row mobile-menu-vertical-center align-items-end">
+				<div class="col">
+					<a id="home-link" class="mobile-link" href="#home">
+						<h3>Home</h3>
+					</a>
+				</div>
 			</div>
-		</div>
 
-		<div class="row mobile-link">
-			<div class="col align-self-center">
-				<h3>Contact</h3>
+			<div class="row mobile-menu-vertical-center">
+				<div class="col">
+					<a id="about-link" class="mobile-link" href="#about">
+						<h3>About</h3>
+					</a>
+				</div>
 			</div>
+
+			<div class="row mobile-menu-vertical-center align-items-start">
+				<div class="col">
+					<a id="contact-link" class="mobile-link" href="#contact">
+						<h3>Contact</h3>
+					</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
-	<div class="mobile-menu-button">
-  		<i class="fas fa-bars fa-4x"></i>
-  		<i class="fas fa-times fa-4x x"></i>
+
+	<div class="mobile-menu-bars fa-4x">
+		<span class="fa-layers fa-fw">
+			<i class="fas fa-circle"></i>
+  			<i class="fas fa-bars" data-fa-transform="shrink-5"></i>
+  		</span>
   	</div>
-	<div class="parallax-window" >
+
+  	<div class="mobile-menu-times fa-4x">
+  		<span class="fa-layers fa-fw">
+  			<i class="fas fa-times-circle"></i>
+  		</span>
+  	</div>
+
+	<div id="home" class="parallax-window" >
+
   		<div class="parallax-slider">
    			<img class="parallax-pic" src="images/mountain.jpg">
   		</div>
+
  		<div class="container-fluid title">
 			<div class="row vertical-center">
 				<div class="col">
+
 					<h1 id="title-name">Alex Collado</h1>
+
 					<div id="cssProperties">
   						<div class="line"></div>
 					</div>
+
 					<h5 id="title-header">Student. Aspiring Software Engineer.</h5>
+
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<nav class="navbar navbar-expand-md sticky-top bg-light navbar-light bg-light">
   		<div class="collapse navbar-collapse" id="navbarNav">
+
 			<ul class="nav navbar-nav navbar-logo flex-fill flex-nowrap">
 				<li>
-					<a class="brandname" href="#">Alex</a>
+					<a class="brandname" href="#home">Alex</a>
 		  		</li>
 		  	</ul>
 		  	
 			<ul class="nav navbar-nav flex-fill w-100 justify-content-center">
+
 	  			<li class="nav-item active">
-	    			<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+	    			<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
 	  			</li>
 
 	  			<li class="nav-item">
-	    			<a class="nav-link" href="#">About</a>
+	    			<a class="nav-link" href="#about">About</a>
 	  			</li>
 
 	  			<li class="nav-item">
-	    			<a class="nav-link" href="#">Contact</a>
+	    			<a class="nav-link" href="#contact">Contact</a>
 	  			</li>
+
 			</ul>
+
 		</div>
 	</nav>
 
 	<div class="container">
-		<div class="row vertical-center">
+
+		<div id="about" class="row vertical-center">
 			<div class="col">
+
+				<h3>About</h3>
+
 				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
 			</div>
 		</div>
 
-		<div class="row vertical-center">
+		<div id="contact" class="row vertical-center">
 			<div class="col">
+
+				<h3>Contact</h3>
+
 				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
 			</div>
 		</div>
 
@@ -97,6 +135,7 @@
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/parallax/parallax.min.js"></script>
 	<script src="js/anime-master/anime.min.js"></script>

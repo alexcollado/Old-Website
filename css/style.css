@@ -41,18 +41,15 @@ body {
   align-items: center;
 }
 
-#mobile-menu {
-	background-color: #FFFFFF;
-	margin: 0 auto;
-	text-align: center;
-	display: none;
-	min-width: 100%;
+.brandname{
+	letter-spacing: 1.5px;
+	color: black;
+	font-size: 22px;
+	font-weight: 450;
 }
-.mobile-link {
-	min-height: 100%;
-	min-height: 33.333333vh;
-	display: flex;
-	align-items: center;
+.brandname:hover{
+	text-decoration: none;
+	color: black;
 }
 
 /*Mobile CSS*/
@@ -77,16 +74,67 @@ body {
 		background-size: cover;
 		background-position: center;
 	}
-	.mobile-menu-button {
+	#mobile-menu-container {
+		background-color: #2b2827;
+		margin: 0 auto;
+		text-align: center;
+		display: none;
+		min-width: 100%;
+		position: fixed;
+		z-index: 99;
+	}
+	.mobile-menu {
+	  min-height: 100%;
+	  min-height: 100vh;
+	  align-items: center;
+	}
+	.mobile-menu-vertical-center {
+		min-height: 100%;
+	    min-height: 33.33vh;
+		display: flex;
+	    align-items: center;
+	}
+	#home-link:hover {
+		text-decoration: none;
+		color: #f45342;
+	}
+	#home-link {
+		color: #ffffff;
+	}
+	#about-link:hover {
+		text-decoration: none;
+		color: #f45342;
+	}
+	#about-link {
+		color: #ffffff;
+	}
+	#contact-link:hover {
+		text-decoration: none;
+		color: #f45342;
+	}
+	#contact-link {
+		color: #ffffff;
+	}
+	.mobile-menu-bars {
 		z-index: 1000;
 		position: fixed;
 		left: 3%;
 		top: 2%;
 	}
-	.mobile-menu-button-link {
-		color: #000000;
+	.fa-circle {
+		color: #2b2827;
 	}
-
+	.fa-bars {
+		color: #ffffff;
+	}
+	.mobile-menu-times {
+		display: none;
+		z-index: 1000;
+		position: fixed;
+		left: 3%;
+		top: 2%;
+		color: #ffffff;
+	}
 }
 
 /*Tablet/Laptop/Desktop CSS*/
@@ -100,18 +148,13 @@ body {
 		height:auto;
 		object-fit: contain
 	}
-	.mobile-menu-button {
+	.mobile-menu-bars {
 		display: none;
 	}
-}
-
-.brandname{
-	letter-spacing: 1.5px;
-	color: black;
-	font-size: 22px;
-	font-weight: 450;
-}
-.brandname:hover{
-	text-decoration: none;
-	color: black;
+	.mobile-menu-times {
+		display: none;
+	}
+	#mobile-menu-container {
+		display: none;
+	}
 }
