@@ -6,6 +6,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="shortcut icon" href="images/wave.ico" />
 	<title>Alex Collado</title>
 </head>
@@ -13,41 +14,61 @@
 	<div id="mobile-menu-container" class="container">
 		<div class="mobile-menu">
 
-			<div class="row mobile-menu-vertical-center align-items-end">
-				<div class="col">
-					<a id="home-link" class="mobile-link" href="#home">
-						<h3>Home</h3>
-					</a>
-				</div>
-			</div>
+			<ul class="mobile-link-list">
 
-			<div class="row mobile-menu-vertical-center">
-				<div class="col">
-					<a id="about-link" class="mobile-link" href="#about">
-						<h3>About</h3>
-					</a>
-				</div>
-			</div>
+				<li class="mobile-link-item">
+					<div class="row mobile-menu-vertical-center">
+						<div class="col">
+							<a id="home-link" class="mobile-link" href="#home">
+								<h3>Home</h3>
+							</a>
+						</div>
+					</div>
+				</li>
 
-			<div class="row mobile-menu-vertical-center align-items-start">
-				<div class="col">
-					<a id="contact-link" class="mobile-link" href="#contact">
-						<h3>Contact</h3>
-					</a>
-				</div>
-			</div>
+				<li class="mobile-link-item">
+					<div class="row mobile-menu-vertical-center">
+						<div class="col">
+							<a id="about-link" class="mobile-link" href="#about">
+								<h3>About</h3>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="mobile-link-item">
+					<div class="row mobile-menu-vertical-center">
+						<div class="col">
+							<a id="education-link" class="mobile-link" href="#education">
+								<h3>Education</h3>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="mobile-link-item">
+					<div class="row mobile-menu-vertical-center">
+						<div class="col">
+							<a id="contact-link" class="mobile-link" href="#contact">
+								<h3>Contact</h3>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
 
 		</div>
 	</div>
 
-	<div class="mobile-menu-bars fa-4x">
+	<div class="mobile-menu-bars fa-3x">
 		<span class="fa-layers fa-fw">
 			<i class="fas fa-circle"></i>
   			<i class="fas fa-bars" data-fa-transform="shrink-5"></i>
   		</span>
   	</div>
 
-  	<div class="mobile-menu-times fa-4x">
+  	<div class="mobile-menu-times fa-3x">
   		<span class="fa-layers fa-fw">
   			<i class="fas fa-times-circle"></i>
   		</span>
@@ -65,8 +86,8 @@
 
 					<h1 id="title-name">Alex Collado</h1>
 
-					<div id="cssProperties">
-  						<div class="line"></div>
+					<div id="title-line-properties">
+  						<div id="title-line" class="line"></div>
 					</div>
 
 					<h5 id="title-header">Student. Aspiring Software Engineer.</h5>
@@ -80,7 +101,7 @@
 	<nav class="navbar navbar-expand-md sticky-top bg-light navbar-light bg-light">
   		<div class="collapse navbar-collapse" id="navbarNav">
 
-			<ul class="nav navbar-nav navbar-logo flex-fill flex-nowrap">
+			<ul class="nav navbar-nav navbar-logo flex-fill flex-nowrap test2">
 				<li>
 					<a class="brandname" href="#home">Alex</a>
 		  		</li>
@@ -97,10 +118,16 @@
 	  			</li>
 
 	  			<li class="nav-item">
+	    			<a class="nav-link" href="#education">Education</a>
+	  			</li>
+
+	  			<li class="nav-item">
 	    			<a class="nav-link" href="#contact">Contact</a>
 	  			</li>
 
 			</ul>
+
+			<div class="nav-place-holder"></div>
 
 		</div>
 	</nav>
@@ -110,19 +137,47 @@
 		<div id="about" class="row vertical-center">
 			<div class="col">
 
-				<h3>About</h3>
+				<div class="section-header-container">
+					<h1 id="about-header" class="section-header">About</h1>
+				</div>
 
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				<div id="about-line-properties">
+  					<div id="about-line" class="line"></div>
+				</div>
+
+				<div class="pull-left">
+					<img class="profile-picture" src="images/profile.jpg">
+				</div>
+
+				<div class="section-text">
+
+					<p>Hi!</p> 
+
+					<p>I'm currently a student at Stony Brook University, pursuing my Bachelor's Degree in Computer Science and Applied Math & Statistics. I expect to graduate in May 2020, and I hold high hopes of becoming a software developer to better impact our tech-centered society.</p>
+
+				</div>
 
 			</div>
 		</div>
 
-		<div id="contact" class="row vertical-center">
+		<div id="education" class="row vertical-center">
 			<div class="col">
 
-				<h3>Contact</h3>
+				<div class="section-header-container">
+					<h1 id="education-header" class="section-header">Education</h1>
+				</div>
 
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				<div id="education-line-properties">
+  					<div id="education-line" class="line"></div>
+				</div>
+
+				<!-- <div class="pull-left">
+					<img class="profile-picture" src="images/profile.jpg">
+				</div> -->
+
+				<div class="section-text">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</div>
 				
 			</div>
 		</div>
@@ -134,6 +189,7 @@
 		</div>
 	</div>
 	
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>

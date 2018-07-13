@@ -1,10 +1,3 @@
-*{
-	font-family: 'Raleway', sans-serif;
-}
-body {
-  height: 100%
-}
-
 .title{
 	margin: 0 auto;
 	text-align: center;
@@ -12,11 +5,13 @@ body {
 	top: -7vh;
 }
 #title-name{
+	font-family: 'Raleway', sans-serif;
 	display: inline-block;
 	font-size: 72px;
 	font-weight: 400;
 }
 #title-header{
+	font-family: 'Raleway', sans-serif;
 	font-size: 22px;
 	font-weight: 350;
 	letter-spacing: 2px;
@@ -42,6 +37,7 @@ body {
 }
 
 .brandname{
+	font-family: 'Raleway', sans-serif;
 	letter-spacing: 1.5px;
 	color: black;
 	font-size: 22px;
@@ -50,6 +46,39 @@ body {
 .brandname:hover{
 	text-decoration: none;
 	color: black;
+}
+.nav-link {
+	font-family: 'Raleway', sans-serif;
+}
+
+.section-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 48px;
+	font-weight: 450;
+	display: inline-block;
+}
+.section-header-container {
+	text-align: center;
+}
+.profile-picture {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+#about-line-properties {
+	margin-bottom: 20px;
+}
+#education-line-properties {
+	margin-bottom: 20px;
+}
+
+.section-text {
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	text-align: center;
+	margin-top: 30px;
 }
 
 /*Mobile CSS*/
@@ -87,33 +116,22 @@ body {
 	  min-height: 100%;
 	  min-height: 100vh;
 	  align-items: center;
+	  justify-content: center;
+	  display: flex;
 	}
-	.mobile-menu-vertical-center {
-		min-height: 100%;
-	    min-height: 33.33vh;
-		display: flex;
-	    align-items: center;
+	.mobile-link-list {
+		list-style-type: none;
 	}
-	#home-link:hover {
+	.mobile-link-item {
+		margin-bottom: 5em;
+	}
+	.mobile-link:hover {
 		text-decoration: none;
 		color: #f45342;
 	}
-	#home-link {
+	.mobile-link {
 		color: #ffffff;
-	}
-	#about-link:hover {
-		text-decoration: none;
-		color: #f45342;
-	}
-	#about-link {
-		color: #ffffff;
-	}
-	#contact-link:hover {
-		text-decoration: none;
-		color: #f45342;
-	}
-	#contact-link {
-		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
 	}
 	.mobile-menu-bars {
 		z-index: 1000;
@@ -157,4 +175,10 @@ body {
 	#mobile-menu-container {
 		display: none;
 	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #title-name {
+    	color: red;
+    }
 }

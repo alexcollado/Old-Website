@@ -27,16 +27,57 @@ jQuery(document).ready(function($) {
 	    speed: 0.4
 	});
 
+	$(".nav-place-holder").css({
+    	'width': ($(".navbar-logo").width() + 'px')
+  	});
+
 	// Line animation under home title
-	var width = document.getElementById('title-name').offsetWidth;
-	addEventListener("load", function(){
-		var cssProperties = anime({
-	  	targets: '#cssProperties .line',
-	  	width: width,
+	var titleWidth = document.getElementById('title-name').offsetWidth;
+	var titleLine = anime({
+	  	targets: '#title-line-properties #title-line',
+	  	width: titleWidth,
 	  	height: '5px',
-	  	duration: 4000,
-	 	delay: 300
-	});})
+	  	duration: 3000,
+	 	delay: 300,
+	 	autoplay: false
+	})
+	addEventListener("load", function(){
+		titleLine.play();
+	;})
+
+	// Line animation under about header
+	var topOfAbout = $("#about").offset().top;
+	var aboutHeaderWidth = document.getElementById('about-header').offsetWidth;
+	aboutLine = anime({
+		targets: '#about-line-properties #about-line',
+		width: aboutHeaderWidth + 40,
+		height: '5px',
+		duration: 2000,
+		autoplay: false
+	});
+	$(window).on("scroll", function(){
+	  	console.log($(window).scrollTop());
+	  	if($(window).scrollTop() > (topOfAbout/1.8)) {
+	  		aboutLine.play();
+	  	}
+	});
+
+	// Line animation under education header
+	var topOfEducation = $("#education").offset().top;
+	var educationHeaderWidth = document.getElementById('education-header').offsetWidth;
+	educationLine = anime({
+		targets: '#education-line-properties #education-line',
+		width: educationHeaderWidth + 40,
+		height: '5px',
+		duration: 2000,
+		autoplay: false
+	});
+	$(window).on("scroll", function(){
+	  	console.log($(window).scrollTop());
+	  	if($(window).scrollTop() > (topOfEducation/1.2)) {
+	  		educationLine.play();
+	  	}
+	});
 
     // Show/Hide mobile menu toggle on click
     $('.mobile-menu-bars').click(function(event) {
