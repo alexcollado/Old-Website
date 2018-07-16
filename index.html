@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="images/wave.ico" />
 	<title>Alex Collado</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarNav">
 	<div id="mobile-menu-container" class="container">
 		<div class="mobile-menu">
 
@@ -99,43 +99,39 @@
 	</div>
 
 	<nav class="navbar navbar-expand-md sticky-top bg-light navbar-light bg-light">
-  		<div class="collapse navbar-collapse" id="navbarNav">
+	  		<div class="collapse navbar-collapse" id="navbarNav">
 
-			<ul class="nav navbar-nav navbar-logo flex-fill flex-nowrap test2">
-				<li>
-					<a class="brandname" href="#home">Alex</a>
-		  		</li>
-		  	</ul>
-		  	
-			<ul class="nav navbar-nav flex-fill w-100 justify-content-center">
+				<ul class="nav navbar-nav navbar-logo flex-fill flex-nowrap test2">
+					<li>
+						<h1 class="brandname">Alex</h1>
+			  		</li>
+			  	</ul>
+			  	
+				<ul class="nav navbar-nav flex-fill w-100 justify-content-center">
 
-	  			<li class="nav-item active">
-	    			<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-	  			</li>
+		  			<li class="nav-item">
+		    			<a class="nav-link" href="#home">Home</a>
+		  			</li>
 
-	  			<li class="nav-item">
-	    			<a class="nav-link" href="#about">About</a>
-	  			</li>
+		  			<li class="nav-item">
+		    			<a class="nav-link" href="#about">About</a>
+		  			</li>
 
-	  			<li class="nav-item">
-	    			<a class="nav-link" href="#education">Education</a>
-	  			</li>
+		  			<li class="nav-item">
+		    			<a class="nav-link" href="#education">Education</a>
+		  			</li>
 
-	  			<li class="nav-item">
-	    			<a class="nav-link" href="#contact">Contact</a>
-	  			</li>
+				</ul>
 
-			</ul>
+				<div class="nav-place-holder"></div>
 
-			<div class="nav-place-holder"></div>
-
-		</div>
-	</nav>
+			</div>
+		</nav>
 
 	<div class="container">
 
-		<div id="about" class="row vertical-center">
-			<div class="col">
+		<div id="about" class="row section">
+			<div id="about-col" class="col">
 
 				<div class="section-header-container">
 					<h1 id="about-header" class="section-header">About</h1>
@@ -151,17 +147,17 @@
 
 				<div class="section-text">
 
-					<p>Hi!</p> 
+					<p>Hello!</p> 
 
-					<p>I'm currently a student at Stony Brook University, pursuing my Bachelor's Degree in Computer Science and Applied Math & Statistics. I expect to graduate in May 2020, and I hold high hopes of becoming a software developer to better impact our tech-centered society.</p>
+					<p>I'm currently a student at Stony Brook University, pursuing my Bachelor's Degree in Computer Science and Applied Mathematics & Statistics. I chose to major in these two fields because I enjoy the problem solving and impact that comes with new and evolving technologies. I hold high hopes of becoming a software developer in the near future to better shape our growing society.</p>
 
 				</div>
 
 			</div>
 		</div>
 
-		<div id="education" class="row vertical-center">
-			<div class="col">
+		<div id="education" class="row section">
+			<div id="education-col" class="col">
 
 				<div class="section-header-container">
 					<h1 id="education-header" class="section-header">Education</h1>
@@ -171,25 +167,71 @@
   					<div id="education-line" class="line"></div>
 				</div>
 
-				<!-- <div class="pull-left">
-					<img class="profile-picture" src="images/profile.jpg">
-				</div> -->
-
 				<div class="section-text">
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					<div class="education-text-container">
+						<h4 style="font-weight: 600">Stony Brook University</h4>
+						<h6 style="font-size: 14px">Stonybrook, NY</h6>
+					</div>
+					<div class="education-text-container">
+						<h6>B.S. in Computer Science and Applied Mathematics & Statistics</h6>
+					</div>
+					<div class="education-text-container">
+						<h6>Expected Graduation: May 2020</h6>
+					</div>
+					<div id="sp-education-text-container">
+						<h4 style="font-weight: 600">Relevant Coursework</h4>
+					</div>
+					<div id="show-coursework" class="coursework-button">
+						<i class="far fa-plus-square fa-2x"></i>
+					</div>
+					<div id="hide-coursework" class="coursework-button">
+						<i class="far fa-minus-square fa-2x"></i>						
+					</div>
+					<ul class="coursework-list">
+						<li class="coursework-item">
+							<h6>Object-Oriented Programming</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Data Structures</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>CPU Architecture</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Assembly Language Programming</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Single and Multi-Variable Calculus</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Discrete Mathematics</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Probability Theory</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Statistics</h6>
+						</li>
+						<li class="coursework-item">
+							<h6>Linear Algebra</h6>
+						</li>
+					</ul>
+					<div id="sp-education-text-container">
+						<h4 style="font-weight: 600">Projects</h4>
+					</div>
+					<div id="show-coursework" class="coursework-button">
+						<i class="far fa-plus-square fa-2x"></i>
+					</div>
+					<div id="hide-coursework" class="coursework-button">
+						<i class="far fa-minus-square fa-2x"></i>						
+					</div>
 				</div>
 				
 			</div>
 		</div>
 
-		<div class="row vertical-center">
-			<div class="col">
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			</div>
-		</div>
 	</div>
 	
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>

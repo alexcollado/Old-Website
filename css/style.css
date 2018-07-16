@@ -1,3 +1,7 @@
+body {
+	position: relative;
+}
+
 .title{
 	margin: 0 auto;
 	text-align: center;
@@ -51,6 +55,20 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+.active {
+	font-weight: bolder;
+}
+
+.container {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.section {
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
 .section-header {
 	font-family: 'Raleway', sans-serif;
 	font-size: 48px;
@@ -76,10 +94,35 @@
 
 .section-text {
 	font-family: 'Montserrat', sans-serif;
-	float: left;
+/*	float: left;*/
 	text-align: center;
 	margin-top: 30px;
 }
+
+.education-text-container {
+	margin-bottom: 40px;
+}
+#sp-education-text-container {
+	margin-bottom: 10px;
+}
+.coursework-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.coursework-item {
+	margin-bottom: 30px;
+}
+#hide-coursework {
+	display: none;
+}
+.coursework-button {
+	margin-bottom: 20px;
+}
+.coursework-list {
+	display: none;
+}
+
 
 /*Mobile CSS*/
 @media (max-width: 768px) {
@@ -99,7 +142,7 @@
 	}
 	.parallax-window {
 		background-image: url("../images/mountainmobile.jpg");
-		min-height: 700px;
+		min-height: 400px;
 		background-size: cover;
 		background-position: center;
 	}
@@ -121,6 +164,8 @@
 	}
 	.mobile-link-list {
 		list-style-type: none;
+		padding: 0;
+    	margin: 0;
 	}
 	.mobile-link-item {
 		margin-bottom: 5em;

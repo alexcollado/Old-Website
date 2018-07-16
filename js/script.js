@@ -46,7 +46,15 @@ jQuery(document).ready(function($) {
 	;})
 
 	// Line animation under about header
-	var topOfAbout = $("#about").offset().top;
+	function updateTopOfAbout() {
+		var about = document.getElementById('about-col');
+		var aboutRelView = about.getBoundingClientRect();
+		var topOfAbout = aboutRelView.top;
+		if(topOfAbout < (initialTopOfAbout/2)) {
+	  		aboutLine.play();
+	  	}
+	}
+	var initialTopOfAbout = $("#about-col").offset().top;
 	var aboutHeaderWidth = document.getElementById('about-header').offsetWidth;
 	aboutLine = anime({
 		targets: '#about-line-properties #about-line',
@@ -56,14 +64,23 @@ jQuery(document).ready(function($) {
 		autoplay: false
 	});
 	$(window).on("scroll", function(){
-	  	console.log($(window).scrollTop());
-	  	if($(window).scrollTop() > (topOfAbout/1.8)) {
-	  		aboutLine.play();
-	  	}
+		updateTopOfAbout();
 	});
+	addEventListener("load", function(){
+		updateTopOfAbout();
+	;})
 
 	// Line animation under education header
-	var topOfEducation = $("#education").offset().top;
+	function updateTopOfEducation() {
+		var education = document.getElementById('education-col');
+		var educationRelView = education.getBoundingClientRect();
+		var topOfEducation = educationRelView.top;
+		if(topOfEducation < (initialTopOfEducation/4)) {
+	  		educationLine.play();
+	  	}
+	}
+	var initialTopOfEducation = ($("#education-col").offset().top);
+	console.log(initialTopOfEducation);
 	var educationHeaderWidth = document.getElementById('education-header').offsetWidth;
 	educationLine = anime({
 		targets: '#education-line-properties #education-line',
@@ -73,11 +90,11 @@ jQuery(document).ready(function($) {
 		autoplay: false
 	});
 	$(window).on("scroll", function(){
-	  	console.log($(window).scrollTop());
-	  	if($(window).scrollTop() > (topOfEducation/1.2)) {
-	  		educationLine.play();
-	  	}
+	  	updateTopOfEducation();
 	});
+	addEventListener("load", function(){
+		updateTopOfEducation();
+	;})
 
     // Show/Hide mobile menu toggle on click
     $('.mobile-menu-bars').click(function(event) {
@@ -96,6 +113,19 @@ jQuery(document).ready(function($) {
     	$('#mobile-menu-container').slideToggle(300);
     	$(".mobile-menu-times").hide(200);
     	$(".mobile-menu-bars").show(500);
+    })
+
+    // Show/Hide Coursework List
+    $('#show-coursework').click(function(event) {
+    	console.log("It Works")
+    	$('.coursework-list').slideToggle(500);
+    	$("#show-coursework").hide(200);
+    	$("#hide-coursework").show(200);
+    })
+    $('#hide-coursework').click(function(event) {
+    	$('.coursework-list').slideToggle(500);
+    	$("#hide-coursework").hide(200);
+    	$("#show-coursework").show(200);
     })
 
     // Select all links with hashes
@@ -119,7 +149,7 @@ jQuery(document).ready(function($) {
 	        	event.preventDefault();
 	        	$('html, body').animate({
 	          	scrollTop: target.offset().top
-	        }, 	1000, function() {
+	        }, 	750, function() {
 	          	// Callback after animation
 	          	// Must change focus!
 	          	var $target = $(target);
