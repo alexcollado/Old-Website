@@ -96,6 +96,32 @@ jQuery(document).ready(function($) {
 		updateTopOfEducation();
 	;})
 
+	// Line animation under contact header
+	function updateTopOfContact() {
+		var contact = document.getElementById('contact-col');
+		var contactRelView = contact.getBoundingClientRect();
+		var topOfContact = contactRelView.top;
+		if(topOfContact < (initialTopOfContact/8)) {
+	  		contactLine.play();
+	  	}
+	}
+	var initialTopOfContact = ($("#contact-col").offset().top);
+	console.log(initialTopOfContact);
+	var contactHeaderWidth = document.getElementById('contact-header').offsetWidth;
+	contactLine = anime({
+		targets: '#contact-line-properties #contact-line',
+		width: contactHeaderWidth + 40,
+		height: '5px',
+		duration: 2000,
+		autoplay: false
+	});
+	$(window).on("scroll", function(){
+	  	updateTopOfContact();
+	});
+	addEventListener("load", function(){
+		updateTopOfContact();
+	;})
+
     // Show/Hide mobile menu toggle on click
     $('.mobile-menu-bars').click(function(event) {
     	$('#mobile-menu-container').slideToggle(300);

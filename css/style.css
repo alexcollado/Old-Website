@@ -91,6 +91,9 @@ body {
 #education-line-properties {
 	margin-bottom: 20px;
 }
+#contact-line-properties {
+	margin-bottom: 20px;
+}
 
 .section-text {
 	font-family: 'Montserrat', sans-serif;
@@ -122,6 +125,8 @@ body {
 .coursework-list {
 	display: none;
 }
+
+
 
 
 /*Mobile CSS*/
