@@ -60,13 +60,13 @@ body {
 }
 
 .container {
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .section {
-	padding-top: 15%;
-	padding-bottom: 15%;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 .section-header {
@@ -97,7 +97,6 @@ body {
 
 .section-text {
 	font-family: 'Montserrat', sans-serif;
-/*	float: left;*/
 	text-align: center;
 	margin-top: 30px;
 }
@@ -108,6 +107,7 @@ body {
 #sp-education-text-container {
 	margin-bottom: 10px;
 }
+
 .coursework-list {
 	list-style-type: none;
 	padding: 0;
@@ -122,11 +122,78 @@ body {
 .coursework-button {
 	margin-bottom: 20px;
 }
+.fa-plus-square:hover {
+	color: #82E0E0;
+}
+.fa-minus-square:hover {
+	color: #82E0E0;	
+}
 .coursework-list {
 	display: none;
 }
 
+.project-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.project-item {
+	margin-bottom: 30px;
+}
+.project-inner-item {
+	margin-bottom: 30px;
+}
+#hide-projects {
+	display: none;
+}
+.project-button {
+	margin-bottom: 20px;
+}
+.project-list {
+	display: none;
+}
+.project-inner-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.metro-map-maker {
+	display: none;
+}
+.vt100 {
+	display: none;
+}
+.fa-caret-square-up:hover {
+	color: #82E0E0;
+}
+.fa-caret-square-down:hover {
+	color: #82E0E0;	
+}
+#hide-metro {
+	display: none;
+}
+#hide-vt100 {
+	display: none;
+}
 
+
+.project-picture {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-mod {
+	background-color: #2b2827;
+	color: #ffffff;
+}
+
+.btn-mod:hover {
+	color: #82E0E0;
+}
 
 
 /*Mobile CSS*/
@@ -161,11 +228,11 @@ body {
 		z-index: 99;
 	}
 	.mobile-menu {
-	  min-height: 100%;
-	  min-height: 100vh;
-	  align-items: center;
-	  justify-content: center;
-	  display: flex;
+	  	min-height: 100%;
+	  	min-height: 100vh;
+	  	align-items: center;
+	  	justify-content: center;
+	  	display: flex;
 	}
 	.mobile-link-list {
 		list-style-type: none;
@@ -177,7 +244,7 @@ body {
 	}
 	.mobile-link:hover {
 		text-decoration: none;
-		color: #f45342;
+		color: #82E0E0;
 	}
 	.mobile-link {
 		color: #ffffff;

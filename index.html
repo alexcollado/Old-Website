@@ -90,7 +90,9 @@
   						<div id="title-line" class="line"></div>
 					</div>
 
-					<h5 id="title-header">Student. Aspiring Software Engineer.</h5>
+					<!-- <h5 id="title-header">Student.</h5> -->
+
+					<h5 id="title-header" style="line-height: 30px;"> Aspiring Software Engineer.</h5>
 
 				</div>
 			</div>
@@ -121,6 +123,10 @@
 		    			<a class="nav-link" href="#education">Education</a>
 		  			</li>
 
+		  			<li class="nav-item">
+		    			<a class="nav-link" href="#contact">Contact</a>
+		  			</li>
+
 				</ul>
 
 				<div class="nav-place-holder"></div>
@@ -147,9 +153,9 @@
 
 				<div class="section-text">
 
-					<p>Hello!</p> 
+					<h4>Hello!</h4> 
 
-					<p>I'm currently a student at Stony Brook University, pursuing my Bachelor's Degree in Computer Science and Applied Mathematics & Statistics. I chose to major in these two fields because I enjoy the problem solving and impact that comes with new and evolving technologies. I hold high hopes of becoming a software developer in the near future to better shape our growing society.</p>
+					<p style="line-height:40px;">I'm currently a student at Stony Brook University, pursuing my Bachelor's Degree in Computer Science and Applied Mathematics & Statistics. I chose to major in these two fields because I enjoy the problem solving and impact that comes with new and evolving technologies. I hold high hopes of becoming a software developer in the near future to better shape our growing society.</p>
 
 				</div>
 
@@ -168,63 +174,163 @@
 				</div>
 
 				<div class="section-text">
+
 					<div class="education-text-container">
+
 						<h4 style="font-weight: 600">Stony Brook University</h4>
+
 						<h6 style="font-size: 14px">Stonybrook, NY</h6>
+
 					</div>
+
 					<div class="education-text-container">
 						<h6>B.S. in Computer Science and Applied Mathematics & Statistics</h6>
 					</div>
+
 					<div class="education-text-container">
 						<h6>Expected Graduation: May 2020</h6>
 					</div>
+
 					<div id="sp-education-text-container">
 						<h4 style="font-weight: 600">Relevant Coursework</h4>
 					</div>
+
 					<div id="show-coursework" class="coursework-button">
-						<i class="far fa-plus-square fa-2x"></i>
+						<i class="far fa-plus-square fa-2x" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>
 					</div>
-					<div id="hide-coursework" class="coursework-button">
-						<i class="far fa-minus-square fa-2x"></i>						
+
+					<div id="hide-coursework" class="coursework-button" >
+						<i class="far fa-minus-square fa-2x" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>						
 					</div>
+
 					<ul class="coursework-list">
+
 						<li class="coursework-item">
 							<h6>Object-Oriented Programming</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>Data Structures</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>CPU Architecture</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>Assembly Language Programming</h6>
 						</li>
+
+						<li class="coursework-item">
+							<h6>Design Patterns</h6>
+						</li>
+
 						<li class="coursework-item">
 							<h6>Single and Multi-Variable Calculus</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>Discrete Mathematics</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>Probability Theory</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>Statistics</h6>
 						</li>
+
 						<li class="coursework-item">
 							<h6>Linear Algebra</h6>
 						</li>
+
 					</ul>
+
 					<div id="sp-education-text-container">
 						<h4 style="font-weight: 600">Projects</h4>
 					</div>
-					<div id="show-coursework" class="coursework-button">
-						<i class="far fa-plus-square fa-2x"></i>
+
+					<div id="show-projects" class="project-button">
+						<i class="far fa-plus-square fa-2x" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>
 					</div>
-					<div id="hide-coursework" class="coursework-button">
-						<i class="far fa-minus-square fa-2x"></i>						
+
+					<div id="hide-projects" class="project-button">
+						<i class="far fa-minus-square fa-2x" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>						
 					</div>
+
+					<ul class="project-list">
+
+						<ul class="project-inner-list">
+							<li class="project-inner-item">
+
+								<h5>Metro Map Maker</h5>
+
+								<div id="show-metro" class="project-button">
+									<i class="far fa-caret-square-down fa-lg" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>
+								</div>
+
+								<div id="hide-metro" class="project-button">
+									<i class="far fa-caret-square-up fa-lg" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>
+								</div>
+
+								<div class="metro-map-maker">
+
+									<h6 style="font-size: 16px;">Java Project</h6>
+
+									<img style="border: 1px solid;" class="project-picture" src="images/metromapmaker.png">
+
+									<p style="line-height: 40px; margin-top: 40px; margin-bottom: 40px">
+										For my final project in my third-level Obect-Oriented Programming and Design Patterns class, I created a Metro Map Maker that allows users to create their own metro maps using stations and lines. The project had to utilize JavaFX, and my professor provided skeleton frameworks that were used as a jump-start for the application. I implemented local saving and loading using JSON.
+									</p>
+
+									<img style="border: 1px solid;" src="images/sdd1.png" class="project-picture">
+
+									<p style="line-height: 40px; margin-top: 40px; margin-bottom: 40px">
+										Before creating the application, I wrote a mock Software Design Document (SDD) as if I were a developer from another company. The SDD detailed the package, class, and method-level design viewpoints, as well as the file structure and formats of the application.
+									</p>
+
+									<img style="border: 1px solid;" src="images/sdd2.png" class="project-picture">
+
+									<p style="line-height: 40px; margin-top: 40px; margin-bottom: 40px">
+										In addition, I used UML class diagrams to provide in-depth detail for the packages, classes, variables, and method signatures needed to build the application.
+									</p>
+
+								</div>
+
+							</li>
+						</ul>
+						
+						<ul class="project-inner-list">
+							<li class="project-inner-item">
+
+								<h5>VT100</h5>
+
+								<div id="show-vt100" class="project-button">
+									<i class="far fa-caret-square-down fa-lg" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>
+								</div>
+
+								<div id="hide-vt100" class="project-button">
+									<i class="far fa-caret-square-up fa-lg" onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='default'"></i>
+								</div>
+
+								<div class="vt100">
+
+									<h6 style="font-size: 16px;">MIPS Project</h6>
+
+									<img class="project-picture" src="images/vt100.png">
+
+									<p style="line-height: 40px;">
+										For my final project in my CPU Architecture and Assembly Language Programming class, I recreated a VT100 display in MIPS. To display the data, I used the Display MMIO (Memory-Mapped Input/Output) Simulator in MARS. The program uses commands to control tasks such as cursor control and background/foreground color changes. I also implemented a dictionary of common Java syntax, allowing for automatic text highlighting on the display.
+									</p>	
+
+								</div>
+
+							</li>
+						</ul>
+
+					</ul>
+
 				</div>
 				
 			</div>
@@ -242,16 +348,29 @@
 				</div>
 
 				<div class="section-text">
+
 					<div class="section-text">
-						<p>If you would like to reach out to me or ask me any questions, please use the form below!</p>
+
+						<h5 style="margin-bottom: 20px">Want to reach out?</h5>
+
+						<h5 style="margin-bottom: 20px">Let's talk.</h5>
+
 					</div>
 
 					<div class="contact-form">
-						<form action="https://formspree.io/alexc1117@gmail.com" method="POST">
-							<input style="margin-bottom: 20px;" type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter name" name="name">
-							<input style="margin-bottom: 20px;" type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email" name="name">
-							<textarea style="margin-bottom: 20px;" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter message"></textarea>
-						    <button style="background-color: #2b2827; color: #ffffff;" type="submit" value="Send" class="btn mb-2">Send</button>
+						<form action="https://formspree.io/alexc1117@gmail.com" method="POST" name="Form" onsubmit="return validateContactForm()">
+
+							<input style="margin-bottom: 20px;" type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email" name="Email" required>
+
+							<input style="margin-bottom: 20px;" type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter name (Optional)" name="Name">
+
+							<input style="margin-bottom: 20px;" type="subject" class="form-control" id="subject" aria-describedby="subject" placeholder="Enter subject" name="Subject" required>
+
+							<textarea style="margin-bottom: 20px;" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter message" name="Message" required></textarea>
+
+							<input type="hidden" name="_gotcha">
+						    <button type="submit" value="Send" class="btn btn-mod mb-2">Send</button>
+
 						</form>
 					</div>
 				</div>

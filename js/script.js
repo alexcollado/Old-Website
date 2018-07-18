@@ -101,7 +101,7 @@ jQuery(document).ready(function($) {
 		var contact = document.getElementById('contact-col');
 		var contactRelView = contact.getBoundingClientRect();
 		var topOfContact = contactRelView.top;
-		if(topOfContact < (initialTopOfContact/8)) {
+		if(topOfContact < (initialTopOfContact/6)) {
 	  		contactLine.play();
 	  	}
 	}
@@ -143,7 +143,6 @@ jQuery(document).ready(function($) {
 
     // Show/Hide Coursework List
     $('#show-coursework').click(function(event) {
-    	console.log("It Works")
     	$('.coursework-list').slideToggle(500);
     	$("#show-coursework").hide(200);
     	$("#hide-coursework").show(200);
@@ -152,6 +151,42 @@ jQuery(document).ready(function($) {
     	$('.coursework-list').slideToggle(500);
     	$("#hide-coursework").hide(200);
     	$("#show-coursework").show(200);
+    })
+
+    // Show/Hide Project List
+    $('#show-projects').click(function(event) {
+    	$('.project-list').slideToggle(500);
+    	$("#show-projects").hide(200);
+    	$("#hide-projects").show(200);
+    })
+    $('#hide-projects').click(function(event) {
+    	$('.project-list').slideToggle(500);
+    	$("#hide-projects").hide(200);
+    	$("#show-projects").show(200);
+    })
+
+    // Show/Hide Metro Map Maker Details
+    $('#show-metro').click(function(event) {
+    	$('.metro-map-maker').slideToggle(500);
+    	$("#show-metro").hide(200);
+    	$("#hide-metro").show(200);
+    })
+    $('#hide-metro').click(function(event) {
+    	$('.metro-map-maker').slideToggle(500);
+    	$("#hide-metro").hide(200);
+    	$("#show-metro").show(200);
+    })
+
+    // Show/Hide VT100 Details
+    $('#show-vt100').click(function(event) {
+    	$('.vt100').slideToggle(500);
+    	$("#show-vt100").hide(200);
+    	$("#hide-vt100").show(200);
+    })
+    $('#hide-vt100').click(function(event) {
+    	$('.vt100').slideToggle(500);
+    	$("#hide-vt100").hide(200);
+    	$("#show-vt100").show(200);
     })
 
     // Select all links with hashes
