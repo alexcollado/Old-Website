@@ -122,6 +122,12 @@ body {
 .coursework-button {
 	margin-bottom: 20px;
 }
+.fa-plus-square {
+	color: #2b2827;
+}
+.fa-minus-square {
+	color: #2b2827;
+}
 .fa-plus-square:hover {
 	color: #82E0E0;
 }
@@ -163,6 +169,12 @@ body {
 .vt100 {
 	display: none;
 }
+.fa-caret-square-up {
+	color: #2b2827;
+}
+.fa-caret-square-down {
+	color: #2b2827;
+}
 .fa-caret-square-up:hover {
 	color: #82E0E0;
 }
@@ -193,6 +205,28 @@ body {
 
 .btn-mod:hover {
 	color: #82E0E0;
+}
+
+.ram-button-wrapper {
+	display: inline-block;
+	margin: 40px;
+}
+
+.fa-newspaper {
+	color: #2b2827;
+}
+.fa-newspaper:hover {
+	color: #82E0E0;
+	/*transition: 0.9s;
+	transform: rotate(360deg);*/
+}
+.fa-linkedin-in {
+	color: #2b2827;
+}
+.fa-linkedin-in:hover {
+	color: #82E0E0;
+	/*transition: 0.9s;
+    transform: rotate(360deg);*/
 }
 
 

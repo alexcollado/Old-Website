@@ -80,7 +80,6 @@ jQuery(document).ready(function($) {
 	  	}
 	}
 	var initialTopOfEducation = ($("#education-col").offset().top);
-	console.log(initialTopOfEducation);
 	var educationHeaderWidth = document.getElementById('education-header').offsetWidth;
 	educationLine = anime({
 		targets: '#education-line-properties #education-line',
@@ -106,7 +105,6 @@ jQuery(document).ready(function($) {
 	  	}
 	}
 	var initialTopOfContact = ($("#contact-col").offset().top);
-	console.log(initialTopOfContact);
 	var contactHeaderWidth = document.getElementById('contact-header').offsetWidth;
 	contactLine = anime({
 		targets: '#contact-line-properties #contact-line',
@@ -225,5 +223,51 @@ jQuery(document).ready(function($) {
 	      }
 	    }
 	});
+
+	var resume = document.getElementById("resume")
+
+	var resumeAnime = anime({
+	  targets: '.resume',
+	  rotate: 360,
+	  duration: 1500,
+	  autoplay: false,
+	});
+
+	function enterResume() {
+	  if (resumeAnime.reversed) resumeAnime.reverse();
+	  resumeAnime.play();
+	}
+
+	function leaveResume() {
+	  if (!enterResume.reversed) resumeAnime.reverse();
+	  resumeAnime.play();
+	}
+
+	resume.addEventListener('mouseenter', enterResume, false);
+	resume.addEventListener('mouseleave', leaveResume, false);
+
+	var linkedin = document.getElementById("linkedin")
+
+	var linkedinAnime = anime({
+	  targets: '.linkedin',
+	  rotate: 360,
+	  duration: 1500,
+	  autoplay: false,
+	});
+
+	function enterLinkedin() {
+	  if (linkedinAnime.reversed) linkedinAnime.reverse();
+	  linkedinAnime.play();
+	}
+
+	function leaveLinkedin() {
+	  if (!enterLinkedin.reversed) linkedinAnime.reverse();
+	  linkedinAnime.play();
+	}
+
+	linkedin.addEventListener('mouseenter', enterLinkedin, false);
+	linkedin.addEventListener('mouseleave', leaveLinkedin, false);
+
+	
 
 });
