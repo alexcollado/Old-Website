@@ -1,4 +1,4 @@
-# alexcollado.github.io V1.0
+# alexcollado.github.io v1.0
 
 This is my personal website that I designed in the Summer of 2018.
 
